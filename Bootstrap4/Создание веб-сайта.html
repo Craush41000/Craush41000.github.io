@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Верстка сайта на Bootstrape</title>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, Fontawesome(icons) -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+ 
+</head>
+
+<body>
+    <!-- Шапка -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="img/logo.png" alt=""></a>
+            <!-- Меню(бургер) -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Сервисы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Команда</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- создаем слайдер(полосы прокрутки) -->
+    <div class="carousel slide" data-ride="carousel" id="slides">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <!-- слайдер(картинки) -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider_1.jpg" alt="">
+                <div class="carousel-caption">
+                    <h1 class="display-2">ITprog</h1>
+                    <h3>Научитесь программировать</h3>
+                    <!-- <button type="button" class="btn btn-outline-light btn-lg">Посмотреть</button> -->
+                    <br>
+                    <button type="button" class="btn btn-info btn-lg">Посмотреть</button>
+                    <br><br>
+                    <button type="button" class="btn btn-warning btn-lg">Демо-сайта</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider_2.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider_3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Основной блок сайта -->
+    <div class="container">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet repellendus fuga numquam
+                    cupiditate accusamus ratione vitae officiis ipsum. Nesciunt corporis dolor perspiciatis? Corporis
+                    necessitatibus ipsum repellendus repellat. Laboriosam, impedit ullam. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quaerat nobis, voluptatem, hic necessitatibus eum nisi dolorum nostrum
+                    sunt cum atque esse earum veritatis perferendis repellendus voluptatum dolore culpa veniam repellat?
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <a href="#"><button class="btn btn-success btn-sm" type="button">Читать далее</button></a>
+                <!-- <a href="#" class="btn btn-info btn-sm" role="button">Читать далее</a> еще один метод-->
+            </div>
+        </div>
+    </div>
+    <!-- Блок с характеристиками -->
+    <div class="container-fluid">
+        <div class="row text-center alert">
+            <div class="col-12">
+                <h1 class="display-6">Создание сайтов</h1>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint laborum delectus, eaque quod
+                    perferendis, nemo sequi dolorem earum excepturi qui nihil quidem quaerat iste sit dignissimos odit,
+                    dolorum maxime voluptate deserunt? Nam repellat, deserunt dolor incidunt voluptatibus placeat
+                    exercitationem, unde temporibus eius doloribus obcaecati repellendus facilis illo, ut ducimus harum
+                    rem eligendi iusto voluptate fugiat. Iure earum repellat unde.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Блок с описанием языков -->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-code"></i>
+                <h3>HTML5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-bold"></i>
+                <h3>Bootstrap</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fab fa-css3"></i>
+                <h3>CSS3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+    <!-- Простая секция с изображением -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="offset-lg-2 col-lg-4">
+                <!-- class="offset-lg-2" слева появляется отступ  -->
+                <h2>Что-то про лес и лесопарк</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut perspiciatis ab eius quis animi!
+                    Molestiae non vero cum excepturi quod quasi. A labore architecto maiores, cupiditate ullam
+                    recusandae minima minus.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste placeat porro quos modi delectus
+                    explicabo accusamus sit facere provident? Architecto ipsum inventore impedit blanditiis quam
+                    reprehenderit assumenda sunt debitis.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste placeat porro quos modi delectus
+                    explicabo accusamus sit facere provident? Architecto ipsum inventore impedit blanditiis quam
+                    reprehenderit assumenda sunt debitis.
+                </p>
+                <br>
+                <a href="#" class="btn btn-danger">Читать далее</a>
+            </div>
+            <div class="col-lg-6">
+                <br>
+                <img src="https://img1.goodfon.ru/original/800x480/5/65/les-derevya-zelen-moh-kamni.jpg"
+                    class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- Блок с фиксированным изображением -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed"></div>
+        </div>
+    </figure>
+    <!-- Закрытая секция(гифки) -->
+    <div class="text-center">
+        <button type="button" id="gifsBtn" class="btn btn-success" data-toggle="collapse" data-target="#gifs">Открыть
+            блок</button>
+    </div>
+    <div id="gifs" class="collapse">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <img src="img/gif_1.gif" class="gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="img/gif_2.gif" class="gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="img/gif_3.gif" class="gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="img/gif_4.gif" class="gif">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Карточки с языками программирования(лесопосадки) -->
+    <div class="container-fluid padding">
+        <div class="row alert text-center">
+            <div class="col-12">
+                <h1 class="display-4">Типы лесопосадок</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="container padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/get-pdb/25978/f7652e92-4049-43f1-b452-546b31b8c2ce/s1200?webp=false"
+                    class="card-img-top" width="800" height="300">
+                    <div class="card-body">
+                        <h4 class="card-title">Лес(картинка-1)</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            reprehenderit id ut!</p>
+                        <a href="#" class="btn btn-warning">Посмотреть</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/get-pdb/33827/22fc467f-397f-455f-87ed-9e652f500c7f/s1200?webp=false"
+                        class="card-img-top" width="800" height="300">
+                    <div class="card-body">
+                        <h4 class="card-title">Лес(картинка-2)</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            reprehenderit id ut!</p>
+                        <a href="#" class="btn btn-warning">Посмотреть</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.artfile.me/wallpaper/04-06-2012/3792x2700/priroda-les-derevya-638052.jpg"
+                    class="card-img-top" width="800" height="300">
+                    <div class="card-body">
+                        <h4 class="card-title">Лес(картинка-3)</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            reprehenderit id ut!</p>
+                        <a href="#" class="btn btn-warning">Посмотреть</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Нижний колонтитул(футер) -->
+    <footer class="container-fluid">
+        <div class="container-fluid">
+            <div class="row padding text-center">
+                <div class="col-12">
+                    <h2>Наши контакты</h2>
+                </div>
+                <div class="col-12 social padding">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
