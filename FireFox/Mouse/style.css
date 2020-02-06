@@ -1,0 +1,275 @@
+
+
+html {
+    background-color: #d0a980;
+}
+
+
+
+#faceMickey {
+    position: relative; /* постановка(текст,изобр.,блок) на центр */
+    width: 250px;
+    height: 400px;
+    margin: 100px auto;
+}
+
+#faceMickey * {
+    position: absolute;
+
+}
+
+.nFace {
+    left: 20px;
+    top: 100px;
+
+    width: 190px;
+    height: 190px;
+    background-color: #000;
+
+    border-radius: 70% 80% 70% 70%;
+    
+    transform: rotate(0);
+    z-index:2;
+}
+
+.leftEar {
+    left: 120px;
+    top: 6px;
+
+    width:105px;
+    height:120px;
+    background-color: #000;
+    border-radius: 90% 80% 90% 80%;
+    transform: rotate(-35deg);
+    z-index:3;
+}
+
+
+.rightEar {
+    left:-60px;
+    top:60px;
+
+    width:105px;
+    height:120px;
+    background-color: #000;
+    border-radius: 90% 80% 90% 80%;
+    transform: rotate(5deg);
+    z-index: 3;
+}
+
+.bgLeftEye {
+    left:40px;
+    top:155px;
+
+    width:60px;
+    height:110px;
+    background-color: #F6D4AF;
+    border-radius: 90% 80% 90% 80%;
+    transform:rotate(-35deg);
+    z-index: 3;
+}
+
+.bgRightEye {
+    left:70px;
+    top:105px;
+
+    width:85px;
+    height:130px;
+    background-color: #F6D4AF;
+    border-radius: 90% 80% 90% 80%;
+    transform:rotate(-25deg);
+    z-index: 3;
+}
+
+.bgMouse {
+    left:88px;
+    top:170px;
+
+    width:85px;
+    height:140px;
+    background-color: #f6d4af;
+    border-radius: 90% 80% 90% 80%;
+    transform:rotate(-110deg);
+    z-index: 3;
+}
+
+.nose {
+    left:86px;
+    top:225px;
+
+    width:60px;
+    height:35px;
+    background-color: #000;
+    border-radius: 90% 80% 90% 80%;
+    transform:rotate(-20deg);
+    z-index: 5;
+}
+
+.mouth {
+    left:70px;
+    top:205px;
+
+    width:120px;
+    height:65px;
+    border: 4px solid #000;
+    background-color: #f6d4af;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    border-radius: 70% 80% 60% 80%;
+    transform: rotate(-30deg);
+    z-index: 4;
+}
+
+.mouth1 {
+    left:122px;
+    top:208px;
+
+    width:75px;
+    height:70px;
+    border: 4px solid #f6d4af;
+    border-left: 2px solid #f6d4af;
+    border-right: 2px solid #f6d4af;
+    background-color: #000;
+    border-top: none;
+    border-radius: 90% 90% 90% 90%;
+    transform:rotate(-30deg);
+    z-index: 3;
+}
+
+.mouthBlackBg {
+    left:126px;
+    top:215px;
+
+    width:80px;
+    height:70px;
+    background-color: #000;
+    border-radius: 90% 90% 90% 90%;
+    transform:rotate(-30deg);
+    z-index: 2;
+}
+
+
+.m1 {
+    left:16px;
+    top:54px;
+
+    width:30px;
+    height:13px;
+    background-color: #ff9a9d;
+    border-radius: 90% 90% 90% 90%;
+    transform: rotate(10deg);
+    z-index: 2;
+}
+
+.m2 {
+    left:33px;
+    top:49px;
+
+    width:30px;
+    height:15px;
+    background-color: #000;
+    border-radius: 90% 90% 90% 90%;
+    transform:rotate(-20deg);
+    z-index: 3;
+}
+
+.m3 {
+    left:33px;
+    top:54px;
+
+    width:30px;
+    height:12px;
+    background-color: #ff9a9d;
+    border-radius: 90% 90% 90% 90%;
+    transform: rotate(-20deg);
+    z-index: 3;
+}
+
+
+.mouthLeft {
+    left:76px;
+    top:265px;
+
+    width:10px;
+    height:13px;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    background-color: transparent;
+    border-radius: 70% 80% 60% 80%;
+    transform: rotate(46deg);
+    z-index: 4;
+}
+
+.mouthRight {
+    left:178px;
+    top:211px;
+
+    width:10px;
+    height:13px;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    background-color: transparent;
+    border-radius: 70% 80% 60% 80%;
+    transform:rotate(90deg);
+    z-index: 4;
+}
+
+.lineUnderNose {
+    left:80px;
+    top:211px;
+
+    width:50px;
+    height:18px;
+    border: 3px solid #d0a980;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    background-color: transparent;
+    border-radius: 70% 80% 60% 80%;
+    transform:rotate(-35deg);
+    z-index: 5;
+}
+
+.leftEye {
+    left:58px;
+    top:167px;
+
+    width:21px;
+    height:60px;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 70% 80% 60% 80%;
+    transform: rotate(-25deg);
+    z-index: 5;
+}
+
+.zn {
+    left:4px;
+    top:31px;
+
+    width:16px;
+    height:30px;
+    background-color: #000;
+    border-radius: 70% 80% 60% 80%;
+    transform: rotate(0deg);
+    z-index: 5; 
+}
+
+.rightEye {
+    left:99px;
+    top:146px;
+
+    width:21px;
+    height:60px;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 70% 80% 60% 80%;
+    transform:rotate(-25deg);
+    z-index: 5;
+}
