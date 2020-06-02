@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* базовая толщина */
+    color: #000; /*основной цвет в макете */
+    /* font-size: 16px; размер текста по умолчанию */
+}
+.header {
+    width: 100%;
+    height: 900px;
+    background-color: #dad186;
+    /* background-color: red; */
+    background-image: radial-gradient(circle 675px at center, #fff 0%, #dad186 100%);
+}
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* сдвиг в право до конца контейнера*/
+    align-items: center; /* контент(текст и т.д) становятся в одну линию(по горизонтали, (см.меню)) */
+    padding-top: 70px; /* отступ сверху(действует внутри обертки(wrapper) ) */
+    margin-bottom: 90px; /* отступ вниз */
+}
+img {
+    width: 180px;
+    height: 140px;
+}
+.logo {
+    font-family: fantasy;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
+    text-decoration: none;
+    color: darkred; 
+}
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.nav__item {
+    margin-right: 50px;
+}
+.nav__item:last-child {
+    margin-right: 0;
+}
+.nav__link {
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+   
+}
+.nav__link:hover {
+    text-decoration: underline;
+}
+.header-content {
+    /* background-color: brown; пример по цвету  
+    padding: 50px 0; отступы */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Контент слева в блоке(текст) */
+.header-desc {
+   /* background-color: rgb(42, 165, 83); пример по цвету 
+   padding: 50px 0; */
+   width: 500px;
+   padding-top: 30px;
+}
+.header__title {
+    /* Стиль для слова Натуральный */
+    color: #000;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.3; /* по множителю(в пикселях 62px), т.е 62/48=1.3 */
+    margin: 0; /* убирает автом-й отступ */
+    margin-bottom: 35px;
+}
+
+.header__text {
+    /* Стиль для абзаца Сок является... */
+    color: #000;
+    font-size: 20px;
+    line-height: 1.7; /* в px 34px */
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.header__btn {
+    /*Стиль для кнопки */
+    display: inline-block; /*блочно-строчный элемент */
+    height: 65px;
+    padding-left: 35px; /* отступ слева */
+    padding-right: 35px; /* отступ справа */
+    border-radius: 60px; /*скругляет кнопку(границы) */
+    /* background-color: #fadb60; */
+    background-color: brown;
+    background-image: linear-gradient(to tap, #ffcc00 0%, #fadb60 100%);
+
+    /* Стиль для текста(Получить заряд) */
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none; /* убирает подчеркивание */
+    line-height: 65px;/* 2-й способ */
+    /*line-height: 1;
+    padding-top: 20px; 1-й способ стилизации */
+
+}
+
+.header__btn:hover {
+    color: #000;
+    text-decoration: underline;
+    text-decoration: none;
+    background-color: brown;
+}
+.header-photo {
+    padding-top: 50px;
+}
+.Ger {
+    height: 450px;
+    width: 700px;
+    border-radius: 50%;
+    
+}
+.Ger:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+/* .header-social {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.header__social-item {
+    font-size: 27px;
+    color: #34383c;
+    text-decoration: none;
+    margin-right: 30px;
+    
+
+}
+
+.header__social-item:last-child {
+    margin-right: 0;
+    
+} */
+
+/* При наведении выделяется иконка */
+/* .header__social-item:hover {
+    opacity: 0.8;
+    color: rgba(36, 36, 129, 0.74);
+} */
+.container2 {
+    background-color: cadetblue;
+    
+    width: 100%;
+    height: 650px;
+
+}
+.nav-wrapper2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* сдвиг в право до конца контейнера*/
+    align-items: center; /* контент(текст и т.д) становятся в одну линию(по горизонтали, (см.меню)) */
+    padding-top: 20px; /* отступ сверху(действует внутри обертки(wrapper) ) */
+    margin-bottom: 90px; /* отступ вниз */
+}
+.team__inner {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.team {
+    margin: 100px 0 70px;
+    
+
+
+}
+
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;/* текст переходит на новую строку */
+    margin: 0 -15px;
+    justify-content: center;
+    
+}
+
+.team__item {
+    padding: 0 15px;
+    width: 25%;
+    margin-bottom: 30px;
+    /* margin-bottom: 30px; <-отступ сверху на 30пх */
+    
+}
+
+.team__photo {
+    /* display: block; */
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    justify-content: center;
+    height: 260px;
+    width: 210px;
+    border-radius: 20px;
+   
+    
+}
+.team__photo1 {
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    justify-content: center;
+    height: 260px;
+    width: 180px;
+    border-radius: 20px;
+}
+.team__name {
+
+    margin-bottom: 8px;
+    /* font-size: 22px; */
+    font-size: 24px;
+    color: 2d3033;
+
+}
+
+.team__prof {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #dad186;
+    text-transform: uppercase;
+}
+
+.team__text {
+    /* margin-bottom: 20px; */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+.header-social {
+    
+    /* margin-left: 360px; */
+    
+    text-align: center;
+   
+    
+   
+
+}
+
+.header__social-item {
+    font-size: 27px;
+    color: #34383c;
+    text-decoration: none;
+    margin-right: 30px;
+   
+    
+
+}
+
+.header__social-item:last-child {
+    margin-right: 0;
+  
+    
+}
+
+/* При наведении выделяется иконка */
+ .header__social-item:hover {
+    opacity: 0.8;
+    color: rgba(36, 36, 129, 0.74);
+} 
+.footer {
+    width: 100%;
+    height: 114px;
+    background-color: #232323;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 2; /* в px 34px; */
+    font-weight: 500;
+    
+   
+}
+/* Создание псевдо-класса, чтобы убрать отступ м/у footer и остальным container */
+.footer::before {
+    content: "";
+    display: table;
+
+}
+
+.footer a {
+    color: #fada5a;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: brown;
+    text-decoration: underline; /* дает подчеркивание при наведении */
+}
